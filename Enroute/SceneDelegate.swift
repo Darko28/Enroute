@@ -2,7 +2,8 @@
 //  SceneDelegate.swift
 //  Enroute
 //
-//  Created by Darko on 11/3/20.
+//  Created by CS193p Instructor.
+//  Copyright © 2020 Stanford University. All rights reserved.
 //
 
 import UIKit
@@ -23,7 +24,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
         // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
-        let contentView = ContentView().environment(\.managedObjectContext, context)
+        let airport = Airport.withICAO("KSFO", context: context)
+        airport.fetchIncomingFlights()
+        let contentView = FlightsEnrouteView(flightSearch: FlightSearch(destination: airport))
+            .environment(\.managedObjectContext, context)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
@@ -38,7 +42,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
         // Release any resources associated with this scene that can be re-created the next time the scene connects.
-        // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
+        // The scene may re-connect later, as its session was not neccessarily discarded (see `application:didDiscardSceneSessions` instead).
     }
 
     func sceneDidBecomeActive(_ scene: UIScene) {
