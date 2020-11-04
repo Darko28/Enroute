@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A293DE3C25510608001B4CC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293DE3B25510608001B4CC6 /* AppDelegate.swift */; };
-		A293DE4025510608001B4CC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293DE3F25510608001B4CC6 /* ContentView.swift */; };
 		A293DE4325510609001B4CC6 /* Enroute.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A293DE4125510609001B4CC6 /* Enroute.xcdatamodeld */; };
 		A293DE4525510609001B4CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A293DE4425510609001B4CC6 /* Assets.xcassets */; };
 		A293DE4825510609001B4CC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A293DE4725510609001B4CC6 /* Preview Assets.xcassets */; };
@@ -29,12 +28,12 @@
 		A293DE7A2551117A001B4CC6 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293DE792551117A001B4CC6 /* Airport.swift */; };
 		A293DE7E2551208A001B4CC6 /* Airline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293DE7D2551208A001B4CC6 /* Airline.swift */; };
 		A293DE82255121AA001B4CC6 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293DE81255121AA001B4CC6 /* Flight.swift */; };
+		A2BAF4C12552264900CDB006 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BAF4C02552264900CDB006 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A293DE3825510608001B4CC6 /* Enroute.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Enroute.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A293DE3B25510608001B4CC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A293DE3F25510608001B4CC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A293DE4225510609001B4CC6 /* Enroute.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Enroute.xcdatamodel; sourceTree = "<group>"; };
 		A293DE4425510609001B4CC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A293DE4725510609001B4CC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -56,6 +55,7 @@
 		A293DE792551117A001B4CC6 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		A293DE7D2551208A001B4CC6 /* Airline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airline.swift; sourceTree = "<group>"; };
 		A293DE81255121AA001B4CC6 /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		A2BAF4C02552264900CDB006 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 			children = (
 				A293DE3B25510608001B4CC6 /* AppDelegate.swift */,
 				A293DE7525510914001B4CC6 /* SceneDelegate.swift */,
-				A293DE3F25510608001B4CC6 /* ContentView.swift */,
+				A2BAF4C02552264900CDB006 /* MapView.swift */,
 				A293DE5825510707001B4CC6 /* Airlines.swift */,
 				A293DE5325510707001B4CC6 /* Airports.swift */,
 				A293DE792551117A001B4CC6 /* Airport.swift */,
@@ -214,10 +214,10 @@
 				A293DE6D255107EF001B4CC6 /* FlightAwareRequest.swift in Sources */,
 				A293DE6E255107EF001B4CC6 /* FlightSimulationData.swift in Sources */,
 				A293DE4325510609001B4CC6 /* Enroute.xcdatamodeld in Sources */,
-				A293DE4025510608001B4CC6 /* ContentView.swift in Sources */,
 				A293DE6C255107EF001B4CC6 /* FlightAware+AirportInfo.swift in Sources */,
 				A293DE82255121AA001B4CC6 /* Flight.swift in Sources */,
 				A293DE6B255107EF001B4CC6 /* FAFlight.swift in Sources */,
+				A2BAF4C12552264900CDB006 /* MapView.swift in Sources */,
 				A293DE7A2551117A001B4CC6 /* Airport.swift in Sources */,
 				A293DE6025510707001B4CC6 /* FlightsEnrouteView.swift in Sources */,
 				A293DE6F255107EF001B4CC6 /* FlightAware+Enroute.swift in Sources */,
